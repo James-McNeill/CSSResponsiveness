@@ -1,0 +1,104 @@
+/* 1. Create a generic class for background style */
+.body-all {
+  background-color: lightblue;
+  margin: 0;
+}
+
+nav, footer {
+  height: 50px;
+  background-color: teal;
+  width: 100%;
+  color: white;
+  /* line-height: 10px; */
+}
+
+/* Remove bullet points */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  /* puts them in a row - allows us to re-arrange order */
+  display: flex; 
+  margin-top: 0;
+  /* justify content:  */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+}
+
+nav li {
+  /* Can set in clockwise order the top, right, bottom, left */
+  /* margin: 0 10px 0 10px; */
+  /* If only two; top/bottom and left/right */
+  /* margin: 0 10px; */
+  background-color: burlywood;
+  font-size: 20px;
+}
+
+/* Add in a hover element */
+nav :hover {
+  background-color: chocolate;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 10px;
+}
+
+footer p {
+  padding-left: 20px
+}
+
+#ending {
+  text-align: center;
+}
+
+/* Flex the text to sit side by side */
+body article {
+  display: flex;
+  /* When the display changes this is the adjustment that takes place. The elements changes from row to column */
+  /* flex-flow: column wrap; */
+  /* flex-flow: row wrap; */
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  margin: 20px;
+}
+
+#blog-text {
+  width: 50%;
+  /* margin: 0 20px; */
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#blog-text p:first-child {
+  margin-bottom: 25px;
+}
+
+.card {
+  width: 500px;
+  background-color: white;
+  /* border: 0.5px solid black; */
+  border-radius: 5%;
+  padding-bottom: 2px;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card li {
+  font-size: 18px;
+}
+
+/* Text align the lower image section */
+#lower-image {
+  text-align: center;
+}
+
+/* Allows the image to automatically scale */
+#lower-image img  {
+  width: 35%;
+  height: auto;
+}
+
