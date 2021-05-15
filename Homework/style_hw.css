@@ -1,0 +1,131 @@
+/* 1. Create a generic class for background style */
+nav, footer {
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+/* Media rule #1 : all browsers <= 400px */
+@media screen and (max-width: 400px) {
+  body {
+    background-color: lightcoral;
+    font-size: 15px;
+  }
+  nav li {
+  background-color: burlywood;
+  font-size: 15px;
+}
+  #blog-text {
+    display: none;
+  }
+}
+
+/* Media rule #2 : all browsers <= 750px */
+@media screen and (min-width: 401px) and (max-width: 750px) {
+  html {
+    transform: rotate(3deg);
+  }
+  body {
+    background-color: lightgreen;
+    font-size: 20px;
+  }
+  nav li {
+  background-color: burlywood;
+  font-size: 20px;
+}
+}
+
+/* Media rule #3 : all browsers > 750px */
+@media screen and (min-width: 751px) and (any-hover: hover) {
+  body {
+    background-color: blueviolet;
+    font-size: 30px;
+  }
+  nav li {
+  background-color: burlywood;
+  font-size: 30px;
+}
+  #author {
+    display: none;
+  }
+  #website-links :hover {
+      background: yellow;
+    }
+}
+
+/* Remove bullet points */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex; 
+  margin-top: 0;
+}
+
+nav li {
+  background-color: burlywood;
+}
+
+/* Add in a hover element */
+nav :hover {
+  background-color: chocolate;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 10px;
+}
+
+footer p {
+  padding-left: 20px
+}
+
+#ending {
+  text-align: center;
+}
+
+/* Flex the text to sit side by side */
+body article {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  margin: 20px;
+}
+
+#blog-text {
+  width: 50%;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+#blog-text p:first-child {
+  margin-bottom: 25px;
+}
+
+.card {
+  width: 500px;
+  background-color: white;
+  border-radius: 5%;
+  padding-bottom: 2px;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card li {
+  font-size: 18px;
+}
+
+/* Text align the lower image section */
+#lower-image {
+  text-align: center;
+}
+
+/* Allows the image to automatically scale */
+#lower-image img  {
+  width: 35%;
+  height: auto;
+}
+
